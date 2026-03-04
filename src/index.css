@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap');
+
+
+
+@font-face {
+    font-family: Effa;
+    src: url('../src/assets/font/Effra_Std_Rg.ttf');
+}
+@font-face {
+    font-family: Gooddog;
+    src: url('../src/assets/font/gooddognew.ttf');
+}
+
+@theme{
+    --font-effa: Effa,  'sans-serif';
+    --font-good: GoodDog, 'sans-serif';
+    --font-roboto: 'Roboto', sans-serif;
+}
+
