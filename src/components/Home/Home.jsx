@@ -88,7 +88,7 @@ const Home = () => {
 
           {/* Elon Musk */}
 
-          <div className="bg-[#181818] px-8 py-4
+          <div className="bg-[#181818] px-8 mb-7
            mb-22  flex flex-wrap items-center gap-3 
           rotate-10 relative shadow-lg -ml-15   z-10">
             <img src={basket} className="w-7 h-7" />
