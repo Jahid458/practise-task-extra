@@ -4,9 +4,12 @@ import print from "/printerest.svg";
 import fb from "/facebook.svg"
 import basket from '/ball.svg'
 import cross from "/cross.png";
+import OpenTab from "../OpenTab/OpenTab";
 
 const Home = () => {
   return (
+
+    <>
     <div className=" bg-black"
     style={{backgroundImage:"url('/BgHero.png')"}}
     >
@@ -44,8 +47,9 @@ const Home = () => {
       <div className=" flex justify-center items-center">
         <div className="text-white flex mt-5 relative gap-5">
           
-          <div className="bg-[#181818] px-8 py-3 flex flex-wrap  items-center
-           gap-3 relative -rotate-10 shadow-lg mb-12 my-8 z-50">
+          {/* twitter */}
+          <div className="bg-[#181818] px-12 py-3 flex flex-wrap  items-center
+           gap-3 relative -rotate-10 shadow-lg mb-18 my-8 z-50">
             <img src={twitter} className="w-7 h-7" />
             <h1 className="font-roboto flex items-center gap-1 relative text-white">
               Cryptopunk - Search
@@ -55,20 +59,23 @@ const Home = () => {
             </h1>
           </div>
 
-
-          <div className="bg-[#181818] px-10 flex flex-wrap items-center gap-3 
-          rotate-4 relative shadow-lg -ml-16 my-10 z-30">
+          {/* popular */}
+          <div className="bg-[#181818] w-75  px-10 flex flex-wrap items-center gap-3 
+          rotate-1.5 relative shadow-lg -ml-32 my-12 z-30">
             <img src={print} className="w-7 h-7" />
             <h1 className="font-roboto flex  items-center gap-1 relative  text-white">
               Popular Design - Search
-              <span className="ml-32 absolute border-gradient-to-r  text-gray-400 text-lg font-light cursor-pointer hover:text-gray-200 transition bg-[#181818] opacity-80">
+              <span className="ml-32 absolute border-gradient-to-r  text-gray-400
+               text-lg font-light cursor-pointer hover:text-gray-200 
+               transition bg-[#181818] opacity-80">
                 <img src={cross} alt="" className="ml-7" />
               </span>
             </h1>
           </div>
 
+            {/* product */}
           <div className="bg-[#181818] px-7  flex flex-wrap items-center gap-3 -rotate-2 relative
-           shadow-lg -ml-12 -mt-0.5 mb-22 z-20">
+           shadow-lg -ml-28 -mt-0.5 mb-22 z-20">
             <img src={fb} className="w-7 h-7" />
             <h1 className="font-roboto flex items-center gap-1 relative  text-white">
               Product Design -  Search
@@ -78,8 +85,12 @@ const Home = () => {
             </h1>  
           </div>
 
-          <div className="bg-[#181818] px-4 py-3 mb-16 mt-5 flex flex-wrap items-center gap-3 
-          rotate-10 relative shadow-lg -ml-12   z-10">
+
+          {/* Elon Musk */}
+
+          <div className="bg-[#181818] px-8 py-4
+           mb-22  flex flex-wrap items-center gap-3 
+          rotate-10 relative shadow-lg -ml-15   z-10">
             <img src={basket} className="w-7 h-7" />
             <h1 className="font-roboto  flex items-center gap-1 relative  text-white pr-6">
               Elon Musk - Search
@@ -91,7 +102,14 @@ const Home = () => {
           </div>  
         </div>
         </div>
+
     </div>
+
+    <OpenTab/>
+    
+    
+    </>
+       
   );
 };  
 
