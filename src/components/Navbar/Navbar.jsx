@@ -49,9 +49,7 @@ const Navbar = () => {
               <a
                 onClick={() => setActive("register")}
                 className={`${
-                  active === "register"
-                    ? "btn bg-white text-black rounded-2xl text-md font-medium"
-                    : "text-white"
+                  active === "register" ? "btn bg-white text-black rounded-2xl text-md font-medium"  : "text-white"
                 }`}
               >
                 Register
